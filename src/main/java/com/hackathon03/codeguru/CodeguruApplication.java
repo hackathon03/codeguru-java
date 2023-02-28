@@ -8,13 +8,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CodeguruApplication {
 
 	public static void main(String[] args) {
+
+		analyze();
+		SpringApplication.run(CodeguruApplication.class, args);
+	}
+
+
+	public static void analyze(){
 		//S1
 		if("1" == "2"){
 			System.out.println("This is not reachable");
 		}
 		//S2
 		CustomException ex= new CustomException();
-		SpringApplication.run(CodeguruApplication.class, args);
+
 	}
 
 }
