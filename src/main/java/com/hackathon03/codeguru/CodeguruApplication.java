@@ -7,6 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CodeguruApplication {
 
 	public static void main(String[] args) {
+		//S1
+		if("1" == "2"){
+			System.out.println("This is not reachable");
+		}
+		
 		SpringApplication.run(CodeguruApplication.class, args);
 	}
 
